@@ -12,7 +12,7 @@
                     <a id="nom">OPPORTUNE</a>
                     <!-- Ajouter une classe active à l'élément correspondant à la page courante -->
                     <a t-attf-class="lien #{'active' if request.httprequest.path == '/templates' else ''}" href="/gestion_marches/templates">Accueil</a>
-                    <a t-attf-class="lien #{'active' if request.httprequest.path == 'http://localhost:8069/web/login' else ''}" href="http://localhost:8069/web/login">Se connecter</a>
+                    <a t-attf-class="lien #{'active' if request.httprequest.path == host else ''}" href="host">Se connecter</a>
                     <a t-attf-class="lien #{'active' if request.httprequest.path == '/contact' else ''}" href="/contact">Contacts</a>
             </nav>
             <div class="o_contact">
