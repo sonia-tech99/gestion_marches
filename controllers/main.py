@@ -12,12 +12,12 @@ class GestionMarchesController(http.Controller):
         
         marches = request.env['gestion_marches.marche'].sudo().search(domain)
 
-        host = request.env['ir.config_parameter'].sudo().get_param('web.base.url')
+        # host = request.env['ir.config_parameter'].sudo().get_param('web.base.url')
         
         # Rendre la vue avec les résultats de recherche
         return request.render('gestion_marches.templates', {
             'marches': marches,
-            'host': host
+            # 'host': host
 
 
         })
